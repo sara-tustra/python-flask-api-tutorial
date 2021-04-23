@@ -24,4 +24,4 @@ def pytest_generate_tests(metafunc):
         except AttributeError:
           metafunc.parametrize("app",[cached_app])
     if 'configuration' in metafunc.fixturenames:
-        metafunc.parametrize("configuration", [json.loads('{"port":3000,"address":"https://pink-orangutan-axp82fv9.ws-us03.gitpod.io","editor":{"mode":"gitpod","version":"1.0.61"},"dirPath":"./.learn","configPath":"learn.json","outputPath":".learn/dist","publicPath":"/preview","grading":"incremental","exercisesPath":".learn/exercises","disableGrading":false,"actions":["build","test","reset","build","test","reset"]}')])
+        metafunc.parametrize("configuration", [json.loads('{"port":3000,"address":"https://pink-orangutan-axp82fv9.ws-us03.gitpod.io","editor":{"mode":"gitpod","version":"1.0.61"},"dirPath":"./.learn","configPath":"learn.json","outputPath":".learn/dist","publicPath":"/preview","grading":"incremental","exercisesPath":".learn/exercises","disableGrading":false,"actions":["build","test","reset","build","test","reset","build","test","reset"]}')])
